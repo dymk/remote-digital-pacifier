@@ -1,0 +1,10 @@
+default: &default
+  adapter: sqlite3
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  reconnect: true
+
+development:
+  <<: *default
+  database: db/development.sqlite3
